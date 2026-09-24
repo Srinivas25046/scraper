@@ -41,7 +41,7 @@ async function main() {
   fs.writeFileSync(path.join(__dirname, '..', 'output', 'books.json'), JSON.stringify(validRecords, null, 2));
   fs.writeFileSync(path.join(__dirname, '..', 'output', 'errors.json'), JSON.stringify(invalidRecords, null, 2));
 
-  const report = {
+  const report= {
     start_time: new Date(startTime).toISOString(),
     duration_ms: Date.now() - startTime,
     pages_fetched: validRecords.length + invalidRecords.length + failedPages.length,
