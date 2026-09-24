@@ -1,10 +1,7 @@
-const fetchPage = require('./fetchPage');
+const discoverBooks = require('./discoverBooks');
 
 async function main() {
-  const html = await fetchPage(
-    'https://books.toscrape.com/catalogue/page-1.html',
-    'catalogue-page-1.html'
-  );
+  const urls = await discoverBooks();
 }
 
 main();

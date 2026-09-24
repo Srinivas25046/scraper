@@ -17,5 +17,8 @@
     "url": "https://github.com/Srinivas25046/scraper/issues"
   },
   "homepage": "https://github.com/Srinivas25046/scraper#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  }
 }
